@@ -1,6 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled, { keyframes } from 'styled-components'
 import logo from '../logo.svg'
+
+import Button from './Button'
+import ToggleButton from './ToggleButton'
 
 const Wrapper = styled.div`
 	display: flex;
@@ -27,10 +30,19 @@ const Logo = styled.img`
 `
 
 const App = props => (
-	<Wrapper>
-		<Logo src={logo} alt='react logo' />
-		<Title {...props}>Hello React!</Title>
-	</Wrapper>
+    <Wrapper>
+        <Logo src={logo} alt='react logo' />
+        <Title {...props}>Hello React!</Title>
+        <ToggleButton onChange={console.log} checked={true}>
+            toggle!
+        </ToggleButton>
+        <ToggleButton onChange={console.log}>
+            toggle!
+        </ToggleButton>
+        <ToggleButton onChange={console.log}>
+            toggle!
+        </ToggleButton>
+    </Wrapper>
 )
 
 export default App

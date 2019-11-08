@@ -2,7 +2,11 @@
     "name": "react-ui-components",
     "version": "1.0.0",
     "description": "Basic React Components for User Interface.",
-    "keywords": ["react", "ui", "components"],
+    "keywords": [
+        "react",
+        "ui",
+        "components"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/juchanei/react-ui-components"
